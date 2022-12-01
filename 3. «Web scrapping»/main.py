@@ -1,9 +1,9 @@
-from scrapper import find_in_preview, find_in_article
+from scrapper import find_in_preview, find_in_article, issue_results
 
 if __name__ == '__main__':
     # определяем список ключевых слов
     KEYWORDS = ['дизайн', 'фото', 'web', 'python']
     # Ваш код
-    find_in_preview(KEYWORDS)
+    issue_results(find_in_preview(KEYWORDS))
     print()
-    find_in_article(KEYWORDS)
+    issue_results(find_in_article(KEYWORDS))
